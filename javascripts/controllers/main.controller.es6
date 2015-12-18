@@ -1,3 +1,8 @@
-export default class MainController {
+export default class mainController {
+  constructor() {
+  }
 
+  hello() {
+    return "Hello!!";
+  }
 }

@@ -4,7 +4,12 @@ export default class main {
     this.scope = {
       amount: '='
     };
-    this.template = 'This is a Tem[late dayo !!! {{ctrl.value}}'
+    this.template = 'This is a Template ---> {{ctrl.value}}'
+  }
+
+  static activate() {
+    main.instance = new main();
+    return main.instance;
   }
 }
 
