@@ -1,15 +1,8 @@
-export default class main {
+class Main {
   constructor() {
     this.restrict = 'E';
-    this.scope = {
-      amount: '='
-    };
-    this.template = 'This is a Template ---> {{ctrl.value}}'
-  }
-
-  static activate() {
-    main.instance = new main();
-    return main.instance;
+    this.template = require('main.html')
   }
 }
 
+export default () => new Main();

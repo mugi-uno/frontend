@@ -14,6 +14,7 @@ module.exports = {
     root: [
       path.join(__dirname, "javascripts/controllers"),
       path.join(__dirname, "javascripts/directives"),
+      path.join(__dirname, "javascripts/services"),
       path.join(__dirname, "node_modules"),
     ],
     extensions: ["", ".js", ".es6"],
@@ -33,6 +34,10 @@ module.exports = {
         test: /\.es6?$/,
         exclude: /(node_modules)/,
         loader: 'babel?presets[]=es2015'
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   }
