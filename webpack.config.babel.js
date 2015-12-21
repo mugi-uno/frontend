@@ -33,7 +33,7 @@ module.exports = {
       {
         test: /\.es6?$/,
         exclude: /(node_modules)/,
-        loader: 'babel?presets[]=es2015'
+        loader: 'babel'
       },
       {
         test: /\.html$/,
